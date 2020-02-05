@@ -1,0 +1,110 @@
+@import url('./normalize.css');
+@import url('./all-around-styles.css');
+@import url('./header.css');
+@import url('./assets-details.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SUBJECT BLOG CLASSES */
+.subject-post {
+  position: relative;
+  text-align: center;
+}
+
+.subject-post .blog-tag {
+  color: var(--neutral-gray);
+  border-radius: 25px;
+  font-size: 1.5rem;
+  right: 16px;
+  padding: 0.317rem;
+  position: absolute;
+  top: 15px;
+}
+
+.subject-post img {
+  /* width: 300px; */
+  width: 486px;
+}
+
+.subject-post {
+  margin: var(--base-rem);
+}
+
+/* POST BLOG ******** need to add subscription to margin left */
+/****** NEED TO ADD HERE suscription -callout*/
+.post-opening-blog .blog-post-title,
+.post-opening-blog .blog-post-data,
+.post-opening-blog .blog-content-sample,
+.post-opening-blog .read-full-article,
+.post-opening-blog .blog-post-group {
+  margin-left: var(--base-rem);
+}
+
+.post-opening-blog {
+  margin: var(--size-scale-1) auto;
+}
+
+.post-opening-blog .blog-post-title {
+  font-size: var(--size-scale-1);
+}
+
+.post-opening-blog,
+.blog-post-data,
+.blog-post-group {
+  color: var(--dark-gray);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.post-opening-blog,
+.blog-post-data,
+.blog-post-group {
+  color: var(--dark-gray);
+  font-size: 0.75rem;
+}
+
+.post-opening-blog,
+.blog-post-data,
+.blog-post-group * {
+  padding-right: 0.5rem;
+}
+
+.post-opening-blog .blog-post-data .blog-post-group *:not(:last-child::after) {
+  content: '.';
+  padding-left: 0.5rem;
+  transform: translateY(-3px);
+}
+
+/* NEED TO ADD .post-opening-blog and .post-content-intro STYLING HERE */
+
+.post-opening-blog .read-full-article {
+  color: var(--dark-salmon);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 var(--base-rem);
+  }
+
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subject-blog {
+    display: grid;
+    grid-gap: 0.75rem;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
