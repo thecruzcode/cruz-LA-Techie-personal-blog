@@ -2,3 +2,16 @@
   max-width: 100%;
   padding-top: 20px;
 }
+
+.blog-paragraph-blocks {
+  font-weight: 500;
+  color: #495061;
+}
+
+figcaption {
+  font-size: initial;
+}
+
+.where-writer-is-from {
+  color: var(--dark-gray);
+}

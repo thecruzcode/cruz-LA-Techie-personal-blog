@@ -1,0 +1,80 @@
+/* .post-opening-blog header *:not(img) {
+  text-align: center;
+} */
+
+.post-opening-blog header img {
+  margin-bottom: var(--size-scale-2);
+  margin-top: var(--size-scale-2);
+}
+
+.post-opening-blog section {
+  color: var(--gray);
+  line-height: 1.5;
+  padding: 0 var(--size-scale-1);
+}
+
+.post-opening-blog {
+  color: var(--white);
+  font-size: var(--size-scale-1);
+}
+
+.post-opening-blog figure {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.post-opening-blog section figcaption {
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.about-the-writer {
+  color: var(--neutral-gray);
+  padding: 0 var(--size-scale-1);
+}
+
+.about-the-writer .writer-name {
+  color: var(--dodger-blue);
+  font-weight: 700;
+}
+
+.about-the-writer .writer-bio {
+  line-height: 1.5;
+}
+
+.about-the-writer,
+.writer-name,
+.writer-bio,
+.where-writer-is-from {
+  margin-left: var(--size-scale-4);
+  margin-right: var(--size-scale-4);
+}
+
+#blog-date {
+  font-size: 0.5em;
+}
+
+.writer-bio {
+  color: var(--dark-gray);
+}
+
+#top-post-blog-title {
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+@media (min-width: 768px) {
+  .post-opening-blog > section,
+  .about-the-writer {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  /* .about-the-writer {
+    width: 100px;
+  } */
+
+  /* .about-the-writer > div {
+    flex-basis: 80%;
+  } */
+}

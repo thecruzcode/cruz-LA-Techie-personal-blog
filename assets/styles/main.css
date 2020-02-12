@@ -45,7 +45,13 @@
 .subscribe-to-blog {
   margin-left: var(--base-rem);
   line-height: 142%;
+  font-size: 2em;
 }
+
+/* .the-buzz-blog-title {
+  text-align: center;
+  font-size: 3em;
+} */
 
 .post-opening-blog {
   margin: var(--size-scale-1) auto;
@@ -61,6 +67,20 @@
   color: var(--dark-gray);
   font-size: 0.75rem;
   font-weight: 700;
+  /* text-transform: uppercase; */
+}
+
+.blog-post-title {
+  text-transform: uppercase;
+  /* text-align: center;
+  font-size: 3em;
+  color: red; */
+}
+
+.the-buzz-blog-title {
+  text-align: center;
+  font-size: 2em;
+  color: red;
   text-transform: uppercase;
 }
 
@@ -90,25 +110,6 @@
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 0 var(--base-rem);
-  }
-
-  .nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .subject-blog {
-    display: grid;
-    grid-gap: 0.75rem;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* SUBSCRIPTION SECTION */
@@ -150,9 +151,13 @@ input:focus {
   padding: var(--base-rem);
 }
 
+button {
+  border-radius: 9px;
+}
+
 /* FOOTER */
 
-footer {
+.footer {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -170,6 +175,53 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 var(--base-rem);
+  }
+
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subject-blog {
+    display: grid;
+    grid-gap: 0.75rem;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    margin: var(--size-scale-1) auto;
+  }
+
+  .subject-post .blog-tag {
+    right: 10px;
+  }
+
+  .subject-post img {
+    width: auto;
+  }
+
+  .post-opening-blog {
+    margin: var(--size-scale-1) var(--size-scale-3);
+  }
+
+  .post-opening-blog .blog-post-title {
+    font-size: var(--size-scale-2);
+  }
+
+  .post-opening-blog .blog-post-title,
+  .post-opening-blog .blog-post-data,
+  .post-opening-blog .blog-content-sample,
+  .post-opening-blog .read-full-article,
+  .post-opening-blog .blog-post-group,
+  .subscribe-to-blog > * {
+    margin-left: var(--size-scale-4);
+    margin-right: var(--size-scale-4);
+  }
+}
+
 @media (min-width: 1024px) {
   .post-opening-blog {
     margin: var(--size-scale-1) var(--size-scale-4);

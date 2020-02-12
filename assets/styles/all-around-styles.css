@@ -20,6 +20,7 @@
   --black: #21252c;
   --yellow: #ffff00;
   --dark-salmon: #e9967a;
+  --dodger-blue: #1e20ff;
 
   font-size: var(--base-root);
 }
