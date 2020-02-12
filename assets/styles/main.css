@@ -27,7 +27,6 @@
 }
 
 .subject-post img {
-  /* width: 300px; */
   width: 486px;
 }
 
@@ -35,8 +34,6 @@
   margin: var(--base-rem);
 }
 
-/* POST BLOG ******** need to add subscription to margin left */
-/****** NEED TO ADD HERE suscription -callout*/
 .post-opening-blog .blog-post-title,
 .post-opening-blog .blog-post-data,
 .post-opening-blog .blog-content-sample,
@@ -47,11 +44,6 @@
   line-height: 142%;
   font-size: 2em;
 }
-
-/* .the-buzz-blog-title {
-  text-align: center;
-  font-size: 3em;
-} */
 
 .post-opening-blog {
   margin: var(--size-scale-1) auto;
@@ -67,14 +59,10 @@
   color: var(--dark-gray);
   font-size: 0.75rem;
   font-weight: 700;
-  /* text-transform: uppercase; */
 }
 
 .blog-post-title {
   text-transform: uppercase;
-  /* text-align: center;
-  font-size: 3em;
-  color: red; */
 }
 
 .the-buzz-blog-title {
@@ -102,8 +90,6 @@
   padding-left: 0.5rem;
   transform: translateY(-3px);
 }
-
-/* NEED TO ADD .post-opening-blog and .post-content-intro STYLING HERE */
 
 .post-opening-blog .read-full-article {
   color: var(--dark-salmon);
@@ -190,7 +176,6 @@ button {
   .subject-blog {
     display: grid;
     grid-gap: 0.75rem;
-    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-columns: repeat(2, 1fr);
     margin: var(--size-scale-1) auto;
   }

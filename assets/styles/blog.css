@@ -1,7 +1,3 @@
-/* .post-opening-blog header *:not(img) {
-  text-align: center;
-} */
-
 .post-opening-blog header img {
   margin-bottom: var(--size-scale-2);
   margin-top: var(--size-scale-2);
@@ -69,12 +65,4 @@
     margin: 0 auto;
     width: 80%;
   }
-
-  /* .about-the-writer {
-    width: 100px;
-  } */
-
-  /* .about-the-writer > div {
-    flex-basis: 80%;
-  } */
 }
