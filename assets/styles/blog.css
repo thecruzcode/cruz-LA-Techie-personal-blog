@@ -38,6 +38,12 @@
   line-height: 1.5;
 }
 
+.bio-avatar {
+  border-radius: 5px;
+  margin-left: var(--size-scale-4);
+  margin-right: var(--size-scale-4);
+}
+
 .about-the-writer,
 .writer-name,
 .writer-bio,
@@ -46,7 +52,7 @@
   margin-right: var(--size-scale-4);
 }
 
-#blog-date {
+.blog-avatar #blog-date {
   font-size: 0.5em;
 }
 
